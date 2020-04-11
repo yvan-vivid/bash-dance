@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "bash-crash"
+version = "0.1.0"
+description = "A tool for bash script preprocessing."
+authors = ["Yvan Vivid <yvan.vivid@gmail.com>"]
+readme = "README.md"
+
+packages = [ { include = "bash_crash" } ]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+mypy = "*"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.4.1"
+neovim = "^0.3.1"
+
+[tool.poetry.scripts]
+bash-crash = 'bash_crash.__main__:run'
+
+[build-system]
+requires = ["poetry-core>=1.0.0a5"]
+build-backend = "poetry.core.masonry.api"

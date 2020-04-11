@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+declare -g venv python tooling_reqs
+venv="./python-venv"
+python="python3.7"
+tooling_reqs="./tooling-requirements.txt"
+
+log() {
+  echo "$1"
+}
+
+set -e
+
+if [[ -d "$venv" ]]; then
+  log "Found virtual environment."
+else
+  log "Creating virtual environment."
+  "$python" -m venv "$venv"
+fi
+
+log "Installing poetry and other tooling."
+"$venv/bin/pip" install -r "$tooling_reqs"
