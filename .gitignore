@@ -1,4 +1,9 @@
+# Python ignores
 *venv/
 *.egg-info/
 __pycache__/
 .mypy_cache/
+
+# Ignores related to build
+/.dev
+/.tooling

@@ -4,14 +4,14 @@
 line 1
 line 2
 
-#% include "./test_lib_a.bash" {
+#% include "./lib/test_lib_a.bash" {
 line 3
 
 #% }
 
 line 4
 
-#% include "./test_lib_b.bash" {
+#% include "./lib/test_lib_b.bash" {
 line 5
 
 #% }

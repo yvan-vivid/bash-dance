@@ -1,13 +1,11 @@
 #!/usr/bin/env bash
 
 declare -g venv python tooling_reqs
-venv="./python-venv"
+venv="./tooling-venv"
 python="python3.7"
 tooling_reqs="./tooling-requirements.txt"
 
-log() {
-  echo "$1"
-}
+log() { echo "$1" >&2 ; }
 
 set -e
 

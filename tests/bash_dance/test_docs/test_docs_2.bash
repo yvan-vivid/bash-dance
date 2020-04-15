@@ -9,7 +9,7 @@ line 2.ignore.1
 line 2.ignore.2
 #% }
 
-#% include "./test_lib_c.bash" {
+#% include "./lib/test_lib_c.bash" {
 line 2.ignore.1
 line 2.ignore.2
 #% }
