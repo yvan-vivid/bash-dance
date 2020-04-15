@@ -1,4 +1,4 @@
-# Bash/Dance
+# Bash/Dance -- Yvan Vivid
 
 This is a tool I created for the primary purpose of inlining `bash` files using a simple macro language embedded in comments. It could do more than it does with a little more work. At the moment, the motivation was that I wanted to develop a small bash library, write scripts that used it, then inline the libraries with the script into a single monolithic file, so that it could be easily downloaded as a self-contained bootstrap script for system configuration tasks.
 
